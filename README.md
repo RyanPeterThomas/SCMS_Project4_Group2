@@ -13,7 +13,7 @@ find the relative position of the camera to the DoBot's end-effector.
 
 1.  run file 'test_dobotandcam.m' or file 'dobotandcam_V1.m'
 
-    These files initialise the DoBot in ROS and start video capture from the webcam.
+    These files initialize the DoBot in ROS and start video capture from the webcam.
     It moves the DoBot into varying positions via a joint angle input and captures greyscale images at each pose.
     The files output a directory folder with each captured image for its adjacent position.
     Each file includes differing poses and image capture positions.
@@ -33,7 +33,7 @@ find the relative position of the camera to the DoBot's end-effector.
     The output of this file will provide the relative camera position. 
     This file is currently set up to run the poses and images from Dom's 
     trial run, collected from one of the project demos. This will need to 
-    be edited in line 9 and 13 to cater to other projects.
+    be edited in lines 9 and 13 to cater to other projects.
 
 
 ## Explanation of Files:
@@ -50,7 +50,7 @@ Functions - contains several functions that are called upon in the
 Poses - this folder contains the transformation matrix from the relative 
 project poses.
 
-letsTest - with this file you can run a simulation of the project.
+letsTest - with this file, you can run a simulation of the project.
 
 calibrationCode - as outlined above.
 
