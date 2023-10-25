@@ -15,7 +15,7 @@ find the relative position of the camera to the DoBot's end-effector.
 
     These files initialize the DoBot in ROS and start video capture from the webcam.
     It moves the DoBot into varying positions via a joint angle input and captures greyscale images at each pose.
-    The files output a directory folder with each captured image for its adjacent position.
+    The files output a directory folder containing each captured image for its adjacent position.
     Each file includes differing poses and image capture positions.
     Run both to produce a more precise result.
 
