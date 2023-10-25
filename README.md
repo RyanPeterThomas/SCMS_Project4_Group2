@@ -1,20 +1,22 @@
 # SCMS_Project4_Group2
 
-Hand-Eye Coordination for the DoBot Robot
-Project 4 | Group 2
+# Hand-Eye Coordination for the DoBot Robot
 
-Description of Project.
-This project controls a DoBot to move to several positions and take images
+## Description:
+
+This project code controls a DoBot to move to several poses and take images
 of a pattern from different positions. These images are then calibrated to 
-find the relative position of the camera to the end effector. 
+find the relative position of the camera to the DoBot's end-effector.
 
 
-How to Run the Project. 
+## How to Run the Project Code:
 
-1.  run file 'test_dobotandcam.m'
-
- 
-2.  run file 'dobotandcam_V1.m'
+1.  run file 'test_dobotandcam.m' or file 'dobotandcam_V1.m'
+    These files initialise the DoBot in ROS and start video capture from the webcam.
+    It moves the DoBot into varying positions via a joint angle input and captures greyscale images at each pose.
+    The files output a directory folder with each captured image for its adjacent position.
+    Each file includes differing poses and image capture positions.
+    Run both to produce a more precise result.
 
 
 3.  run file 'transforns.m'
@@ -31,28 +33,40 @@ How to Run the Project.
     be edited in line 9 and 13 to cater to other projects.
 
 
-Explanation of Files. 
+## Explanation of Files:
 
 DomImages - this folder contains collected images from DoBot tests taken 
 with the poses from 'DomPose'.
+
 RyanImages - this folder contains collected images from DoBot tests taken 
 with the poses from 'RyanPose'.
+
 Functions - contains several functions that are called upon in the 
-'calibrationCode.m' file, that makes the code more clear and concise. 
+'calibrationCode.m' file, which makes the code more clear and concise.
+
 Poses - this folder contains the transformation matrix from the relative 
-porject poses. 
-letsTest - with this file you can run a simulation of the project. 
-calibrationCode - as outlined above. 
+project poses.
+
+letsTest - with this file you can run a simulation of the project.
+
+calibrationCode - as outlined above.
+
 dobotandcam_V1 - as outlined above.
-test_dobotandcam - as outlined above. 
+
+test_dobotandcam - as outlined above.
+
 transforns - as outlined above.
 
 
-Project Contribution.
+## Individual Contribution:
 
-calibrationCode.m - Ruby
-Functions - Ruby
-Poses - Ruby
-transforns - Dom
-dobotandcam_V1 - Ryan, Dom
-test_dobotandcam - Ryan, Dom
+Domenic Kadioglu (24426924) - 33%
+
+Ruby Laidlaw (14264903) - 33%
+
+Ryan Thomas (13938802) - 33%
+
+
+## References:
+
+This code in heavily inspired by [ZacharyTaylor'swork](https://github.com/ZacharyTaylor/Camera-to-Arm-Calibration) in which he calibrates via a static camera facing toward the DoBot with a pattern attached to its end-effector.
