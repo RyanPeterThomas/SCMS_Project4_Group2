@@ -12,6 +12,7 @@ find the relative position of the camera to the DoBot's end-effector.
 ## How to Run the Project Code:
 
 1.  run file 'test_dobotandcam.m' or file 'dobotandcam_V1.m'
+
     These files initialise the DoBot in ROS and start video capture from the webcam.
     It moves the DoBot into varying positions via a joint angle input and captures greyscale images at each pose.
     The files output a directory folder with each captured image for its adjacent position.
@@ -19,7 +20,8 @@ find the relative position of the camera to the DoBot's end-effector.
     Run both to produce a more precise result.
 
 
-3.  run file 'transforns.m'
+2.  run file 'transforns.m'
+
     To run this you will need the 'Peter Corkes Robotics toolbox' running.
     This file will take the poses from DoBot and transform them into the 
     required matrices. The output of this file is what can be seen in our
@@ -27,6 +29,7 @@ find the relative position of the camera to the DoBot's end-effector.
 
 
 3.  run file 'calibrationCode.m'
+ 
     The output of this file will provide the relative camera position. 
     This file is currently set up to run the poses and images from Dom's 
     trial run, collected from one of the project demos. This will need to 
